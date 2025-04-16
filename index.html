@@ -22,6 +22,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: black;
       color: white;
+      align-items: center;
     }
 
     /* Hamburger icon */
@@ -111,6 +112,12 @@
     .section {
       margin-top: 30px;
     }
+    .project{
+        padding-top: 20px;
+    }
+    .project>img{
+        padding-top: 10px;
+    }
 
     .section h2 {
       font-size: 24px;
@@ -141,10 +148,15 @@
       margin-bottom: 15px;
     }
 
-    #social {
-      text-align: center;
-    }
-
+    .social ul{
+        padding-top: 10px;
+    list-style-type: none;
+    text-align: center;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
     .section a {
       color: #00aaff;
     }
@@ -168,7 +180,7 @@
   <!-- Sidebar Navbar -->
   <nav class="navbar" id="sidebarMenu">
     <ul>
-      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="resume.html"><i class="fa-solid fa-house"></i> Home</a></li>
       <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
       <li><a href="#education"><i class="fa-solid fa-pen"></i> Education</a></li>
       <li><a href="#skills"><i class="fa-solid fa-envelope"></i> Skills</a></li>
@@ -237,16 +249,28 @@
       <p><strong>Phone:</strong> <a href="https://wa.me/916006488822" target="_blank">+91-6006498822</a></p>
       <p><strong>Email:</strong> <a href="mailto:sheikhriyaz420@gmail.com">sheikhriyaz420@gmail.com</a></p>
       <p><strong>Location:</strong> Srinagar, Kashmir, India</p>
-
-      <div style="margin-top: 10px; font-size: 1.3em;" id="social">
-        <a href="https://facebook.com/yourprofile" target="_blank" style="margin-right:15px;"><i class="fab fa-facebook"></i></a>
-        <a href="https://instagram.com/yourprofile" target="_blank" style="margin-right:15px;"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" style="margin-right:15px;"><i class="fab fa-linkedin"></i></a>
-        <a href="https://wa.me/916006488822" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      </div>
     </div>
+      <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/shykh.ryad.108121"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/sheikhz_offical?igsh=MTJ4ajFqbXhjY3Jzbg=="><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                </li>
+                <li>
+                    <a href="https://x.com/Sheikhz_offical?t=xm22aRuKz78XuvQJmJpePA&s=09"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+                </li>
+                <li>
+                    <a href="6006498822"><img src="https://img.icons8.com/fluent/48/000000/whatsapp.png"/></a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-  </div>
+
+  
 
   <!-- JS for Skills + Sidebar Toggle -->
   <script>
