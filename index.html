@@ -5,28 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sheikh Riyaz ul Islam - Resume</title>
   <!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Fonts and Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
   <style>
-    *{
-        padding: 0;
-        margin: 0;
-        text-transform: capitalize;
-    }
-    body {
+    * {
+      padding: 0;
       margin: 0;
+      text-transform: capitalize;
+      scroll-behavior: smooth;
+    }
+
+    body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: black;
-      color: #333;
+      color: white;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #131313;
+      padding: 15px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar ul li {
+      margin: 0 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover,
+    .navbar ul li a.active {
+      color: gold;
     }
 
     .resume-container {
       max-width: 900px;
       margin: 40px auto;
-      color: white;
       padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);        background-color: #131313
-
+      background-color: #131313;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     .header {
@@ -61,8 +96,8 @@
       margin-bottom: 10px;
       color: gold;
       border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
-      padding: 10px;
+      padding: 10px 0;
+      text-align:center;
     }
 
     ul.skills {
@@ -84,78 +119,109 @@
     .education, .project {
       margin-bottom: 15px;
     }
-    #social{
-        text-align: center;
-        text-decoration: none;
+
+    #social {
+      text-align: center;
     }
+
+    .section a {
+      color: #00aaff;
+    }
+
+    .section a:hover {
+      color: gold;
+    }
+    .section>p{
+        padding-top: 30px;
+    }
+
   </style>
 </head>
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+        <li><a href="resume.html" class="fa-solid fa-house">Home</a></li>
+      <li><a href="#about" class="fa-solid fa-user">About</a></li>
+      <li><a href="#education"  class="fa-solid fa-pen">Education</a></li>
+      <li><a href="#skills"  class="fa-solid fa-envelope">Skills</a></li>
+      <li><a href="#projects" class="fa-solid fa-box">Projects</a></li>
+      <li><a href="#contact" class="fa-solid fa-phone">Contact</a></li>
+    </ul>
+  </nav>
+
   <div class="resume-container">
-    <div class="header">
-      <div class="profile-pic" id="profile-pic"></div>
+
+    <!-- Header -->
+    <div class="header" id="about">
+      <div class="profile-pic"></div>
       <div>
         <div class="name">Sheikh Riyaz ul Islam</div>
         <div>MCA Graduate | Full Stack Developer</div>
       </div>
-      
-    </div>
-    <div>
-        <p>
-            MCA graduate from Kashmir University, passionate about full stack development and AI. Skilled in HTML, CSS, JavaScript, React, Java, C++, and Python. I enjoy solving real-world problems with code and learning new technologies.
-          </p>
-          
     </div>
 
+    <!-- About -->
     <div class="section">
+        <h2>about</h2>
+      <p>
+        MCA graduate from Kashmir University, passionate about full stack development and AI.
+        Skilled in HTML, CSS, JavaScript, React, Java, C++, and Python.
+        I enjoy solving real-world problems with code and learning new technologies.
+      </p>
+    </div>
+
+    <!-- Education -->
+    <div class="section" id="education">
       <h2>Education</h2>
       <div class="education">
         <strong>Master of Computer Applications (MCA)</strong><br />
         Kashmir University
       </div>
       <div class="education">
-        <strong>3-months internship in web-development</strong><br />
-        code-today srinagar
+        <strong>3-months internship in Web Development</strong><br />
+        Code-Today, Srinagar
       </div>
     </div>
 
-    <div class="section">
+    <!-- Skills -->
+    <div class="section" id="skills">
       <h2>Skills</h2>
       <ul class="skills" id="skills-list">
-        <!-- Skills will be loaded by JavaScript -->
+        <!-- Filled by JS -->
       </ul>
     </div>
 
-    <div class="section">
-        <h2>Projects</h2>
-        <div class="project">
-          <strong>shoping cart Website</strong><br />
-           A shopping cart that promotes kashmiri Art and culture<br />
-           <img src="Screenshot (135).png" alt="Portfolio Preview" style="width:200px; margin-top:10px; border-radius:8px;" /><br>
-          <a  href="https://riyaz-786.github.io/kashmircart/" target="_blank" > View Project</a>
-        </div>
+    <!-- Projects -->
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <strong>Shopping Cart Website</strong><br />
+        A shopping cart that promotes Kashmiri art and culture.<br />
+        <img src="Screenshot (135).png" alt="Portfolio Preview" style="width:200px; margin-top:10px; border-radius:8px;" /><br>
+        <a href="https://riyaz-786.github.io/kashmircart/" target="_blank">View Project</a>
       </div>
+    </div>
 
+    <!-- Contact -->
+    <div class="section" id="contact">
+      <h2>Contact</h2>
+      <p><strong>Phone:</strong> <a href="https://wa.me/916006488822" target="_blank">+91-6006498822</a></p>
+      <p><strong>Email:</strong> <a href="mailto:sheikhriyaz420@gmail.com">sheikhriyaz420@gmail.com</a></p>
+      <p><strong>Location:</strong> Srinagar, Kashmir, India</p>
 
-
-
-
-      <div class="section">
-        <h2>Contact</h2>
-        <p><strong>Phone:</strong> <a href="https://wa.me/916006488822" target="_blank">+91-6006498822</a></p>
-        <p><strong>Email:</strong> <a href="mailto:sheikhriyaz420@gmail.com">sheikhriyaz420@gmail.com</a></p>
-        <p><strong>Location:</strong> srinagar Kashmir, India</p>
-      
-        <div style="margin-top: 10px; font-size: 1.3em;" id="social">
-          <a href="https://facebook.com/yourprofile" target="_blank" style="margin-right:15px;"><i class="fab fa-facebook"></i></a>
-          <a href="https://instagram.com/yourprofile" target="_blank" style="margin-right:15px;"><i class="fab fa-instagram"></i></a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" style="margin-right:15px;"><i class="fab fa-linkedin"></i></a>
-          <a href="https://wa.me/91XXXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        </div>
+      <div style="margin-top: 10px; font-size: 1.3em;" id="social">
+        <a href="https://facebook.com/yourprofile" target="_blank" style="margin-right:15px;"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/yourprofile" target="_blank" style="margin-right:15px;"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" style="margin-right:15px;"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/916006488822" target="_blank"><i class="fab fa-whatsapp"></i></a>
       </div>
-      
-      
+    </div>
 
+  </div>
+
+  <!-- JS for Skills -->
   <script>
     const skills = [
       "HTML", "CSS", "JavaScript", "React", "PHP",
@@ -164,12 +230,33 @@
     ];
 
     const skillsList = document.getElementById("skills-list");
-
     skills.forEach(skill => {
       const li = document.createElement("li");
       li.textContent = skill;
       skillsList.appendChild(li);
     });
+
+    // Optional: Highlight active nav link on scroll
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('.navbar a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
   </script>
+
 </body>
 </html>
